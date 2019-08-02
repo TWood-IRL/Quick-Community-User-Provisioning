@@ -1,0 +1,4 @@
+<design:component label="Flow_Community_User_Setup">
+   <design:attribute name="var_customMetadataArray" label="Community Array" />
+   <design:attribute name="var_selectedCommunityId" label="Selected Community Id" /> 
+</design:component>

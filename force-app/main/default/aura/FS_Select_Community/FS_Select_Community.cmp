@@ -1,0 +1,15 @@
+<aura:component implements="lightning:availableForFlowScreens" access="global">
+    <aura:attribute name="var_customMetadataArray" type="Community_Setup__mdt[]"/>
+    <aura:attribute name="var_customMetadataOptions" type="Object[]" access="private"/>
+    <aura:attribute name="var_selectedCommunity" type="Community_Setup__mdt"/>
+    <aura:attribute name="var_selectedCommunityId" type="String"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+    <lightning:combobox name="selectCommunity" 
+                        label="Select a Community"
+                        value="{!v.var_selectedCommunity}"
+                        placeholder="Select a Community" 
+                        options="{! v.var_customMetadataOptions }" 
+                        onchange="{! c.handleChange }"/>
+
+</aura:component>
